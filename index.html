@@ -5,115 +5,270 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robert's Portfolio</title>
-    <style>
-        body {
-            margin: auto 20px;
-            text-align: center;
-            background-color: #393E46;
-            color: #EEEEEE;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        hr {
-            border-top: 7px dotted #222831;
-            border-bottom: none;
-            border-left: none;
-            border-right: none;
-            width: 60px;
-            margin-top: 10px;
-        }
-
-        a {
-            color: inherit;
-        }
-
-        table {
-            margin-left: auto;
-            margin-right: auto;
-        }
-    </style>
+    <title>Robert Taylor's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <div class="header-left">
+            <h1 id="porfolio-title">Robert Royce Taylor's Portfolio</h1>
+        </div>
+        <div class="header-right socials">
+            <p>
 
-    <h1>Robert Royce Taylor</h1>
-    <br>
-    <p>
-        Self-Taught Web Developer. Focusing on the Front-End. <br>
-        <em>HTML | CSS | JavaScript | C#</em> <br>
-        This site is currently a work in progress... new proper site launching soon. <br>
-        Thank you for your patience.
-    </p>
+                <a href="mailto:roycetaylor.rt@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <i>Email</i>
+                    <img class="socials-icons" id="email-icon" src="images/Icons/social-icons/envelope-closed-8x.png"
+                        alt="email-icon">
+                    <img class="socials-icons external-icon" src="images/Icons/social-icons/external-link-8x.png"
+                        alt="">
+                </a>
+            </p>
+            <p>
+                <a href="https://github.com/RobertRoyceTaylor" target="_blank" rel="noopener noreferrer">
+                    <i>GitHub</i>
+                    <img class="socials-icons" id="github-icon" src="images/Icons/social-icons/github-8x.png"
+                        alt="github-icon">
+                    <img class="socials-icons external-icon" src="images/Icons/social-icons/external-link-8x.png"
+                        alt="">
+                </a>
+            </p>
+            <p>
+                <a href="https://www.linkedin.com/in/robert-taylor-rt/" target="_blank" rel="noopener noreferrer">
+                    <i>LinkedIn</i>
+                    <img class="socials-icons" id="linkedin-icon" src="images/Icons/social-icons/linked-in-8x.png"
+                        alt="linkedin-icon">
+                    <img class="socials-icons external-icon" src="images/Icons/social-icons/external-link-8x.png"
+                        alt="">
+                </a>
+            </p>
+            <p>
+                <!-- No Resume At this time -->
+                <a href="resume/Robert_R_Taylor_Resume.pdf" download="Robert_Royce_Taylor_Resume" target="_blank"
+                    rel="noopener noreferrer">
+                    <i>Resume</i>
+                    <img class="socials-icons" id="resume-icon" src="images/Icons/social-icons/file-8x.png"
+                        alt="resume-icon">
+                    <img class="socials-icons external-icon" src="images/Icons/social-icons/external-link-8x.png"
+                        alt="">
+                </a>
+            </p>
+        </div>
 
-    <hr>
-    <h3>Web Projects</h3>
-    <a href="https://numbers.rcrtaylor.com/" target="_blank">Numbers</a> |
-    <a href="https://spot-on.rcrtaylor.com/" target="_blank">SpotOn</a> |
-    <a href="https://github.com/RobertRoyceTaylor">GitHub Repositories</a>
-    </table>
-    <hr>
-    <h3>Skills</h3>
-    <table cellspacing="10">
-        <tbody>
-            <tr>
-                <td><b>Languages</b></td>
-                <td><b>Frameworks</b></td>
-            </tr>
-            <tr>
-                <td>HTML</td>
-                <td>Node.JS</td>
-            </tr>
-            <tr>
-                <td>CSS</td>
-                <td>Boostrap</td>
-            </tr>
-            <tr>
-                <td>JavaScript</td>
-                <td>jQuery</td>
-            </tr>
-            <tr>
-                <td>C#</td>
-                <td>Express.JS</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
-    <h3>Education</h3>
-    <p>
-        Seneca College <br>
-        Purchasing and Supply Chain Management <br>
-        Graduated with Honours (3.6 GPA)
-    </p>
-    <hr>
-    <h3>Work Experience</h3>
-    <table cellspacing="10">
-        <thead>
+    </header>
+    <!--About Me-->
+    <div class="container" id="about-me-container">
+        <h2 class="section-header" id="about-me-header">About Me</h2>
+        <hr class="line-break">
+        <p class="about-me">A self-taught programmer, specializing in Web Development.
+            <br><br>
+            I am a working professional with 8 years experience in the workforce
+            and 1 year experience with web/software development.
+            <br><br>
+            I am a driven individual who enjoys learning and exploring new
+            concepts while always facing new challenges head-on.
+            <br><br>
+            I am looking to be part of a team where I can grow within the company while being an asset and honing my
+            skills.
+            <br><br>
+            To learn more about my skillset, please take a look at my <a class="about-me-links"
+                href="#projects-container">personal projects</a>, my <a class="about-me-links" href="#resume">resume</a>,
+            or feel free to <a class="about-me-links" href="mailto:roycetaylor.rt@gmail.com" target="_blank"
+                rel="noopener noreferrer">contact</a> me with any
+            inquiries you might have.
+            <br><br>
+            Thank you and I look forward to hearing from you!
+        </p>
+    </div>
+    <!--Skills Section-->
+    <div class=".container" id="skills-container">
+        <h2 class="section-header" id="skills-header">Skills</h2>
+        <hr class="line-break">
+        <!-- <h3>Technical Skills</h3> -->
+        <div class="technical-skills-container">
+            <div class="skills-heading" id="languages">
+                <h4>Languages</h4>
+                <div class="skills-image-container">
+                    <img class="skills-image" src="images/Icons/technical-skills/html.png" alt="HTML-Logo">
+                    <p>HTML</p>
+                </div>
+                <div class="skills-image-container">
+                    <img class="skills-image" src="images/Icons/technical-skills/css.png" alt="CSS-Logo">
+                    <p>CSS</p>
+                </div>
+                <div class="skills-image-container">
+                    <img class="skills-image" src="images/Icons/technical-skills/javascript.png" alt="JavaScript-Logo">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skills-image-container">
+                    <img class="skills-image" src="images/Icons/technical-skills/csharp.png" alt="C#-Logo" height="">
+                    <p>C#</p>
+                </div>
+            </div>
+            <div div class="skills-heading" id="frameworks">
+                <h4>Frameworks</h4>
+                <div class="skills-image-container">
+                    <img class="skills-image" src="images/Icons/technical-skills/jquery.png" alt="jQuery-Logo">
+                    <p>jQuery</p>
+                </div>
+                <div class="skills-image-container">
+                    <img class="skills-image" src="images/Icons/technical-skills/bootstrap.png" alt="Bootstrap-Logo">
+                    <p>Bootstrap</p>
+                </div>
+            </div>
+            <div div class="skills-heading" id="backend">
+                <h4>Backend Runtimes</h4>
+                <div class="skills-image-container">
+                    <img class="skills-image" src="images/Icons/technical-skills/nodejs.png" alt="Node-JS-Logo">
+                    <p>Node.js</p>
+                </div>
+                <div class="skills-image-container">
+                    <img class="skills-image" src="images/Icons/technical-skills/express.png" alt="Express-Logo">
+                    <p>Express</p>
+                </div>
+            </div>
+        </div>
 
-            <th>Work</th>
-            <th>Position</th>
-            <th>Dates</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Crawford Metal Corporation</td>
-                <td>Junior Buyer</td>
-                <td>2019 - 2020</td>
-            </tr>
-            <tr>
-                <td>Penguin Pickup</td>
-                <td>Customer Service Associate</td>
-                <td>2017 - 2019</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
-    <h3>Contact Me</h3>
-    <p>Email: <a href="mailtto: roycetaylor.rt@gmail.com">roycetaylor.rt@gmail.com</a> | 
-        <a href="https://www.linkedin.com/in/robert-taylor-rt/">LinkedIn</a>
-    </p>
-    
+    </div>
+    <!--Project Portfolio-->
+    <div class="container" id="projects-container">
+        <h2 class="section-header" id="projects-header">Projects</h2>
+        <hr class="line-break">
+        <div id="projects-display" class="row">
+            <div class="projects-image column" id="project-spot-on">
+                <h3>SpotOn</h3>
+                <div class="project-images-button-container">
+                    <img class="project-example-image" src="images/SpotOn Images/SpotOn-Image.png"
+                        alt="Spot-On-Image-Example">
+                    <div class="link-btn">
+                        <a href="https://spot-on.rcrtaylor.com/" target="_blank" rel="noopener noreferrer"><button
+                                class="btn btn-one">Visit</button></a>
+                        <a href="https://github.com/RobertRoyceTaylor/reaction-time" target="_blank"
+                            rel="noopener noreferrer"><button class="btn btn-two">GitHub</button></a>
+                    </div>
 
+                </div>
+                <div class="dropdown-container">
+                    <p class="dropdown-content">
+                        A browser game, built to help improve hand-eye coordination with
+                        a mouse or touch screen.
+                        <br><br>
+                        Utilized JavaScript methods to return the dimensions of the user’s screen, allowing for a
+                        dynamically scaling play area to accommodate various screen sizes while also establishing a
+                        buffer, calculated via the pixel size of the target, to avoid collision with the borders of the
+                        playable area.
+                    </p>
+                </div>
+            </div>
+            <div class="projects-image column" id="project-numbers-project">
+                <h3>Numbers</h3>
+                <div class="project-images-button-container">
+                    <img class="project-example-image"
+                        src="images/Number's Project Images/Numbers-Project-Stopwatch.png"
+                        alt="Numbers-Project-Image-Example">
+                    <div class="link-btn">
+                        <a href="https://numbers.rcrtaylor.com/" target="_blank" rel="noopener noreferrer"> <button
+                                class="btn btn-one">Visit</button></a>
+                        <a href="https://github.com/RobertRoyceTaylor/number-based-projects" target="_blank"
+                            rel="noopener noreferrer"><button class="btn btn-two">GitHub</button></a>
+                    </div>
+                </div>
+                <div class="dropdown-container">
+                    <p class="dropdown-content">A browser application consisting of a clock, counter, stopwatch, timer,
+                        and metronome.
+                        <br><br>
+                        Incorporated interval methods to create the necessary delay needed to keep track of time within
+                        the applications while alleviating any desynchronization that may occur while running the
+                        program for extended periods of time by calling the clearInterval() method to prevent memory
+                        leaks.
+                    </p>
+                </div>
+            </div>
+            <div class="projects-image column" id="project-to-do-list-c#">
+                <h3>To Do List</h3>
+                <div class="project-images-button-container">
+                    <img class="project-example-image" src="images/ToDoList Images/ToDoList-Example.png"
+                        alt="To-Do-List-Image-Example">
+                    <div class="link-btn">
+                        <a href="https://github.com/RobertRoyceTaylor/To-Do-List-Project" target="_blank"
+                            rel="noopener noreferrer"> <button class="btn btn-three">GitHub</button></a>
+                    </div>
+                </div>
+                <div class="dropdown-container">
+                    <p class="dropdown-content">
+                        A console application that allows the user to add , delete and mark tasks that can be saved and
+                        opened later.
+                        <br><br>
+                        Formulated an approach to saving user files by storing the user’s inputs within a List data
+                        structure that when finished, will write all the lines of the List into a text file and store
+                        that file locally. When the application is re-opened, that text file is read and added to the
+                        List data structure for use by the user.
+                    </p>
+                </div>
+            </div>
+            <!-- insert more projects here -->
+
+        </div>
+    </div>
+    <div class="container" id="work-exp-container">
+        <h2 class="section-header" id="work-exp-header">Work Experience</h2>
+        <hr class="line-break">
+        <div class="work-experience-job-title">
+            <h3 class="work-left-align work-company">Crawford Metal</h3>
+            <h5 class="work-right-align work-location">Toronto,ON</h5>
+        </div>
+        <div class="work-experience-job-title">
+            <h4 class="work-left-align work-position">Junior Buyer</h4>
+            <h5 class="work-right-align work-dates">Oct 2019 - June 2020</h5>
+        </div>
+        <div class="work-experience-points">
+            <p class="point">Sourced over 500 SKU's with varying supply and demand while forecasting inventory levels to
+                ensure
+                overstock and understock did not occur while maximizing company profits.
+                <hr class="work-line-break">
+            </p>
+            <p class="point">Corresponded with multiple suppliers to coordinate production runs for custom orders by
+                gathering and
+                consolidating manufacturer quotes to assist the sales team with customer orders.
+                <hr class="work-line-break">
+            </p>
+            <p class="point">Audited purchase order confirmations and delivery manifests to catch and correct errors
+                with our
+                suppliers through verifying all orders before they are processed in our system by using original
+                purchase orders to backup claims as required.</p>
+        </div>
+        <hr class="line-break">
+        <div id="resume" class="work-experience-job-title">
+            <h3 class="work-left-align work-company">Penguin Pickup</h3>
+            <h5 class="work-right-align work-location">Toronto,ON</h5>
+        </div>
+        <div class="work-experience-job-title">
+            <h4 class="work-left-align work-position">Customer Service Associate</h4>
+            <h5 class="work-right-align work-dates">Aug 2017 - Oct 2019</h5>
+        </div>
+
+        <div class="work-experience-points">
+            <p class="point">Overhauled Excel spreadsheets within the company to assist with inventory management and
+                customer
+                delivery scheduling that increased employee efficiency by automating repetitive tasks.
+                <hr class="work-line-break">
+            </p>
+            <p class="point">Trained remote teams in British Columbia by creating process and procedure documentation
+                that helped
+                assist in the growth and expansion of the company nationally.
+                <hr class="work-line-break">
+            </p>
+            <p class="point">Earned the Employee of the Month Award for April 2019.</p>
+        </div>
+
+    </div>
+    <footer>
+        © 2022 Robert Taylor
+    </footer>
 </body>
-
 </html>

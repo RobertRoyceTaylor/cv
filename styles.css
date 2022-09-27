@@ -1,0 +1,325 @@
+/* Base styling for website */
+:root {
+    --main-backgroud:#1F1D36;
+    --main-fontcolor:#c7c7c7;
+    --main-linebreak:#a081cf73;
+
+    /* White */
+    --main-filter:invert(91%) sepia(0%) saturate(20%) hue-rotate(176deg) brightness(85%) contrast(81%);
+    --main-highlight-filter: invert(99%) sepia(3%) saturate(818%) hue-rotate(211deg) brightness(118%) contrast(100%);
+    --main-highlight-text:#eeeeee;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(190deg, rgba(31,29,54,1) 0%, rgba(83,47,75,1) 75%, rgba(134,72,121,1) 100%);    
+    color: var(--main-fontcolor);
+    font-family: 'Roboto Condensed', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto 100px;
+    text-align: center;
+}
+
+hr{
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    width: 60px;
+    filter: opacity(11);
+}
+
+.line-break{
+    border-top: 7px dotted var(--main-linebreak);
+    margin: 20px auto;
+}
+
+
+header{
+    display: inline-block;
+    margin: 20px;
+}
+
+.header-left, .header-right{
+    padding: 0 50px;
+}
+
+.header-right a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-right p{
+    margin: 5px 10px;
+    display: inline-block;
+}
+
+.header-left{
+    font-size: 30px;
+}
+
+.socials-icons{
+    height: 20px;
+    vertical-align: bottom;
+    filter: var(--main-filter);
+    transition: 0.5s ease-in;
+    transition: 0.1s ease-out;
+    margin-left: 5px;
+}
+
+.header-right p:hover{
+    color: var(--main-highlight-text);
+}
+
+.header-right p:hover .socials-icons, .skills-image-container:hover img{
+    filter: var(--main-highlight-filter);
+    transform: scale(1.05);
+    
+}
+
+.external-icon{
+    opacity: 50%;
+    height: 10px;
+    vertical-align: top;
+}
+
+/* About Me */
+
+.about-me{
+    width: 50%;
+    margin: auto;
+    padding-bottom: 50px;
+    
+}
+
+.about-me-links{
+    color: inherit;
+    font-weight: bold;
+}
+
+/* Technical Skills */
+
+.skills-heading{
+    display: inline-block;
+    width: 500px;
+    margin: 0 auto 40px;
+}
+
+
+.skills-image-container{
+    display: inline-block;
+    margin: 20px 30px;
+    height: 50px;
+}
+
+.skills-image-container p{
+    margin: 0;
+}
+
+.skills-image-container img{
+    filter: var(--main-filter);
+    transition: 0.5s ease-in;
+    transition: 0.1s ease-out;
+    margin: 0 auto;
+    width: 50px;
+}
+
+.skills-image-container:hover p{
+    color: var(--main-highlight-text)
+}
+
+/* Projects Styling */
+
+
+.projects-image{
+    display: inline-block;
+    width: 500px;
+    height: auto;
+    margin: auto;
+}
+
+.project-images-button-container{
+    position: relative;
+}
+
+.projects-image img {
+    width: 90%;
+    border-radius: 20px;
+    padding: 10px;
+    transition: 0.5s ease;
+}
+
+.projects-image:hover img{
+    transform: scale(1.05);
+    filter: drop-shadow(10px 5px 10px #17002b) brightness(50%);
+}
+
+/*Displays the link buttons */
+.projects-image:hover .btn{
+    visibility: visible;
+}
+
+
+.projects-image .btn{
+    background-color: rgb(0, 0, 0);
+    border: 2px solid white;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: inherit;
+    position: absolute;
+    text-align: center;
+    transition: 0.5s ease-in;
+    transition: 0.1s ease-out;
+    visibility: hidden;
+    width: 20%;
+    height: 15%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); 
+}
+
+/* Project Buttons Styling (needs fixing, wont scale)*/
+.btn-one{
+    top: 50%;
+    left: 38%;
+
+}
+
+.btn-two{
+    top: 50%;
+    left: 62%;
+
+}
+
+.btn-three{
+    top: 50%;
+    left: 50%;
+}
+
+/* Project Content Explaination Dropdown */
+.dropdown-container{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    border-top: 7px dotted var(--main-linebreak);
+    padding-top: 15px;
+    visibility: hidden;
+    width: auto;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.projects-image:hover .dropdown-content{
+    visibility: visible;
+}
+
+
+/* Work Experience */
+#work-exp-container{
+    margin: 0 25%
+}
+
+.work-experience-job-title{
+    vertical-align:middle;
+    padding-bottom: 20px;
+    margin: 10px auto;
+}
+
+.work-left-align{
+    margin: auto;
+    float: left;
+}
+
+.work-right-align{
+    margin: auto;
+    float: right;
+}
+
+
+.work-experience-points {
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+.work-position, .work-dates{
+    font-style: italic;
+}
+
+.work-line-break{
+    border-top: 4px dotted var(--main-linebreak);
+    width: 3%;
+}
+
+
+footer{
+    margin: 100px auto 20px;
+}
+
+
+/* Mobile Scale */
+
+@media only screen and (max-width: 1280px) {
+    body{
+        margin: auto 10px 10px;
+    }
+    
+    .projects-image{
+        width: 45%;
+    }
+
+    #work-exp-container{
+        margin: 0 5%;
+    }
+    
+
+}
+
+@media screen and (max-width: 600px) {
+    .header-left{
+        font-size: 16px;
+    }
+
+    .about-me{
+        width: 80%;
+    }
+
+    .projects-image{
+        width: 90%;
+    }
+
+    .dropdown-content{
+        display: none;
+    }
+
+    .projects-image:hover .dropdown-content{
+        display: block;
+    }
+
+    .skills-heading{
+        width: 300px;
+    }
+
+    .header-right i, .external-icon{
+        display: none;
+    }
+    .header-right p{
+        margin: 5px;
+    }
+
+
+}
+
+
+/* 
+To Do:
+
+- Scalability for mobile / buttons
+- Research Display: Grid
+
+
+*/
