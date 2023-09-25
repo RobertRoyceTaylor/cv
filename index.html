@@ -5,16 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Robert Royce Taylor's Portfolio">
-    <meta name="description"
-        content="A self-taught programmer, focusing on Front-End Web Development.Included is a  collection of my projects, skills, and past work experience.">
-    <meta name="keywords"
-        content="HTML, CSS, JavaScript, JS, Nodejs, Expressjs, express, portfolio, projects, resume, C Sharp,">
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="English">
-    <meta name="author" content="Robert Royce Taylor">
-    <link rel="icon" type="image/x-icon" href="images/Icons/resume-favicon.ico">
     <title>Robert Taylor's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Google Fonts -->
@@ -26,15 +16,17 @@
 <body>
     <header>
         <div class="header-left">
+            <img id="profile-picture" src="images/Icons/profile_picture.jpg">
             <h1 id="porfolio-title">Robert Royce Taylor's Portfolio</h1>
-        </div>
+        </div>  
         <div class="header-right socials">
             <p>
-
                 <a href="mailto:roycetaylor.rt@gmail.com" target="_blank" rel="noopener noreferrer">
                     <i>Email</i>
                     <img class="socials-icons" id="email-icon" src="images/Icons/social-icons/envelope-closed-8x.png"
                         alt="email-icon">
+                    <!--<img class="socials-icons external-icon" src="images/Icons/social-icons/external-link-8x.png"
+                        alt="">-->
                 </a>
             </p>
             <p>
@@ -42,6 +34,7 @@
                     <i>GitHub</i>
                     <img class="socials-icons" id="github-icon" src="images/Icons/social-icons/github-8x.png"
                         alt="github-icon">
+
                 </a>
             </p>
             <p>
@@ -49,14 +42,17 @@
                     <i>LinkedIn</i>
                     <img class="socials-icons" id="linkedin-icon" src="images/Icons/social-icons/linked-in-8x.png"
                         alt="linkedin-icon">
+
                 </a>
             </p>
             <p>
+                
                 <a href="resume/Robert_R_Taylor_Resume.pdf" download="Robert_Royce_Taylor_Resume" target="_blank"
                     rel="noopener noreferrer">
                     <i>Resume</i>
                     <img class="socials-icons" id="resume-icon" src="images/Icons/social-icons/file-8x.png"
                         alt="resume-icon">
+
                 </a>
             </p>
         </div>
@@ -64,12 +60,13 @@
     </header>
     <!--About Me-->
     <div class="container" id="about-me-container">
+       <!-- <img id="profile-picture" src="images/Icons/profile_picture.jpg">-->
         <h2 class="section-header" id="about-me-header">About Me</h2>
         <hr class="line-break">
-        <p class="about-me">A self-taught programmer, specializing in Web Development.
+        <p class="about-me">A self-taught programmer, focusing on Software Development and Process Improvement.
             <br><br>
             I am a working professional with 10 years experience in the workforce
-            and 2 year experience with web/software development.
+            and 2 years experience with web / software development.
             <br><br>
             I am a driven individual who enjoys learning and exploring new
             concepts while always facing new challenges head-on.
@@ -78,8 +75,7 @@
             skills.
             <br><br>
             To learn more about my skillset, please take a look at my <a class="about-me-links"
-                href="#projects-container">personal projects</a>, my <a class="about-me-links"
-                href="#resume">resume</a>,
+                href="#projects-container">personal projects</a>, my <a class="about-me-links" href="#resume">resume</a>,
             or feel free to <a class="about-me-links" href="mailto:roycetaylor.rt@gmail.com" target="_blank"
                 rel="noopener noreferrer">contact</a> me with any
             inquiries you might have.
@@ -93,6 +89,17 @@
         <hr class="line-break">
         <!-- <h3>Technical Skills</h3> -->
         <div class="technical-skills-container">
+            <div div class="skills-heading" id="frameworks">
+                <h4>Frameworks</h4>
+                <div class="skills-image-container">
+                    <img class="skills-image" src="images/Icons/technical-skills/jquery.png" alt="jQuery-Logo">
+                    <p>jQuery</p>
+                </div>
+                <div class="skills-image-container">
+                    <img class="skills-image" src="images/Icons/technical-skills/bootstrap.png" alt="Bootstrap-Logo">
+                    <p>Bootstrap</p>
+                </div>
+            </div>
             <div class="skills-heading" id="languages">
                 <h4>Languages</h4>
                 <div class="skills-image-container">
@@ -111,18 +118,16 @@
                     <img class="skills-image" src="images/Icons/technical-skills/csharp.png" alt="C#-Logo" height="">
                     <p>C#</p>
                 </div>
-            </div>
-            <div div class="skills-heading" id="frameworks">
-                <h4>Frameworks</h4>
                 <div class="skills-image-container">
-                    <img class="skills-image" src="images/Icons/technical-skills/jquery.png" alt="jQuery-Logo">
-                    <p>jQuery</p>
+                    <img class="skills-image" src="images/Icons/technical-skills/python.png" alt="Python-Logo">
+                    <p>Python</p>
                 </div>
                 <div class="skills-image-container">
-                    <img class="skills-image" src="images/Icons/technical-skills/bootstrap.png" alt="Bootstrap-Logo">
-                    <p>Bootstrap</p>
+                    <img class="skills-image" src="images/Icons/technical-skills/VBA.png" alt="vba-Logo">
+                    <p>VBA</p>
                 </div>
             </div>
+            
             <div div class="skills-heading" id="backend">
                 <h4>Backend Runtimes</h4>
                 <div class="skills-image-container">
@@ -137,6 +142,105 @@
         </div>
 
     </div>
+
+    <div class="container" id="work-exp-container">
+        <h2 class="section-header" id="work-exp-header">Work Experience</h2>
+        <hr class="line-break">
+        <div class="work-experience-job-title">
+            <h3 class="work-left-align work-company">SmartCentres</h3>
+            <h5 class="work-right-align work-location">Vaughan, ON</h5>
+        </div>
+        <div class="work-experience-job-title">
+            <h4 class="work-left-align work-position">Analyst</h4>
+            <h5 class="work-right-align work-dates">April 2023 - Present</h5>
+        </div>
+        <div class="work-experience-points">
+            <p class="point"> Reduced cost by 60% by overhauling the company's expense forms using Microsoft user forms. 
+                This streamlined process enhanced administrator and associate operations through:
+
+                <ul>
+                    <li>Direct PDF receipt upload to the expense form.</li>
+                    <li>Auto-emailing the finalized expense form to the Accounting Department and the associate's expense form approver.</li>
+                    <li>Boosting productivity and reducing workload cost by compiling the Summary by General Ledger Codes.</li>
+                </ul> 
+                <hr class="work-line-break">
+            </p>
+            <p class="point"> Reduced report generation running time by 66% by converting the General and Administrative Time 
+                billing per project capitalization reports from Visual Basics for Applications to Python. 
+                Utilized libraries like pywintypes and openpyxl for direct Excel access, maintaining accuracy.
+                <hr class="work-line-break">
+            </p>
+            <p class="point"> Improved operational efficiency by finding an impactful solution to reconcile the newly implemented Yardi 7S data 
+                with existing Yardi Voyager data. I used a hybrid approach that combined the Microsoft Excel compare files tool with a custom program, 
+                enabling users to select files and remove unnecessary formatting. 
+                This method streamlined the accurate comparison process within the company during the transition between systems.
+            </p>
+        </div>
+        <hr class="line-break">
+        <div class="work-experience-job-title">
+            <h3 class="work-left-align work-company">SmartCentres</h3>
+            <h5 class="work-right-align work-location">Vaughan, ON</h5>
+        </div>
+        <div class="work-experience-job-title">
+            <h4 class="work-left-align work-position">Junior Accountant</h4>
+            <h5 class="work-right-align work-dates">November 2022 - April 2023</h5>
+        </div>
+        <div class="work-experience-points">
+            <p class="point"> Increased timesheet compliance by creating a program that automatically detects incomplete timesheets, 
+                generating and cross-referencing email reminders to Associates, dynamically adjusting based on the status of their timesheets.
+                <hr class="work-line-break">
+            </p>
+            <p class="point"> Cut Development Fees calculation time by over 50% by overhauling pre-existing code, improving various functions, and 
+                enhancing reporting accuracy, leading to consistent monthly performance target achievement.
+                <hr class="work-line-break">
+            </p>
+            <p class="point"> Enhanced the journal entry process by implementing patterns and templates and creating an automation tool, 
+                eliminating repetitive keying and improving overall workflow efficiency.</p>
+        </div>
+        <hr class="line-break">
+        <div class="work-experience-job-title">
+            <h3 class="work-left-align work-company">Crawford Metal</h3>
+            <h5 class="work-right-align work-location">Toronto, ON</h5>
+        </div>
+        <div class="work-experience-job-title">
+            <h4 class="work-left-align work-position">Junior Buyer</h4>
+            <h5 class="work-right-align work-dates">Oct 2019 - June 2020</h5>
+        </div>
+        <div class="work-experience-points">
+            <p class="point">Maximized profits by sourcing 500+ SKUs and forecasting inventory to prevent overstock and understock.
+                <hr class="work-line-break">
+            </p>
+            <p class="point">Streamlined custom order coordination by liaising with suppliers, consolidating quotes, and supporting the sales team.
+                <hr class="work-line-break">
+            </p>
+            <p class="point">Enhanced order accuracy by auditing purchase confirmations and manifests, correcting errors, and verifying orders using original documents.</p>
+        </div>
+     <!--   <hr class="line-break">
+        <div id="resume" class="work-experience-job-title">
+            <h3 class="work-left-align work-company">Penguin Pickup</h3>
+            <h5 class="work-right-align work-location">Toronto, ON</h5>
+        </div>
+        <div class="work-experience-job-title">
+            <h4 class="work-left-align work-position">Customer Service Associate</h4>
+            <h5 class="work-right-align work-dates">Aug 2017 - Oct 2019</h5>
+        </div>
+
+        <div class="work-experience-points">
+            <p class="point">Overhauled Excel spreadsheets within the company to assist with inventory management and
+                customer
+                delivery scheduling that increased employee efficiency by automating repetitive tasks.
+                <hr class="work-line-break">
+            </p>
+            <p class="point">Trained remote teams in British Columbia by creating process and procedure documentation
+                that helped
+                assist in the growth and expansion of the company nationally.
+                <hr class="work-line-break">
+            </p>
+            <p class="point">Earned the Employee of the Month Award for April 2019.</p>
+        </div>
+    -->
+    </div>
+
     <!--Project Portfolio-->
     <div class="container" id="projects-container">
         <h2 class="section-header" id="projects-header">Projects</h2>
@@ -157,13 +261,11 @@
                 </div>
                 <div class="dropdown-container">
                     <p class="dropdown-content">
-                        A browser game, built to help improve hand-eye coordination with
-                        a mouse or touch screen.
+                        A browser application, built to help improve hand-eye coordination with a mouse or touch screen.
                         <br><br>
-                        Utilized JavaScript methods to return the dimensions of the user’s screen, allowing for a
-                        dynamically scaling play area to accommodate various screen sizes while also establishing a
-                        buffer, calculated via the pixel size of the target, to avoid collision with the borders of the
-                        playable area.
+                        Enhanced user engagement by implementing target randomization, calculating height and width, 
+                        and utilizing DOM manipulation. This ensured that the clickable target dynamically moved within the play area, 
+                        adding challenge and variety to the user experience.
                     </p>
                 </div>
             </div>
@@ -184,10 +286,9 @@
                     <p class="dropdown-content">A browser application consisting of a clock, counter, stopwatch, timer,
                         and metronome.
                         <br><br>
-                        Incorporated interval methods to create the necessary delay needed to keep track of time within
-                        the applications while alleviating any desynchronization that may occur while running the
-                        program for extended periods of time by calling the clearInterval() method to prevent memory
-                        leaks.
+                        Crafted precise time calculations for various features to ensure app's versatility and improve user experience. 
+                        These mathematical solutions included handling the conversion of 61 seconds into 1 minute and 1 second, 
+                        and calculating beats per minute for the metronome.
                     </p>
                 </div>
             </div>
@@ -203,13 +304,12 @@
                 </div>
                 <div class="dropdown-container">
                     <p class="dropdown-content">
-                        A console application that allows the user to add, delete and mark tasks that can be saved and
-                        opened later.
+                        An application written in C# that allows a user to add, delete, and mark off tasks on a list that will be saved for further use.
                         <br><br>
-                        Formulated an approach to saving user files by storing the user’s inputs within a List data
-                        structure that when finished, will write all the lines of the List into a text file and store
-                        that file locally. When the application is re-opened, that text file is read and added to the
-                        List data structure for use by the user.
+                        Implemented safeguards within the application to prevent errors, including parsing user input, 
+                        enabling easy mode-switching, saving files seamlessly, and disabling duplicate line items, 
+                        enhancing the overall user experience and data integrity.
+                        
                     </p>
                 </div>
             </div>
@@ -217,61 +317,9 @@
 
         </div>
     </div>
-    <div class="container" id="work-exp-container">
-        <h2 class="section-header" id="work-exp-header">Work Experience</h2>
-        <hr class="line-break">
-        <div class="work-experience-job-title">
-            <h3 class="work-left-align work-company">Crawford Metal</h3>
-            <h5 class="work-right-align work-location">Toronto,ON</h5>
-        </div>
-        <div class="work-experience-job-title">
-            <h4 class="work-left-align work-position">Junior Buyer</h4>
-            <h5 class="work-right-align work-dates">Oct 2019 - June 2020</h5>
-        </div>
-        <div class="work-experience-points">
-            <p class="point">Sourced over 500 SKU's with varying supply and demand while forecasting inventory levels to
-                ensure
-                overstock and understock did not occur while maximizing company profits.
-                <hr class="work-line-break">
-            </p>
-            <p class="point">Corresponded with multiple suppliers to coordinate production runs for custom orders by
-                gathering and
-                consolidating manufacturer quotes to assist the sales team with customer orders.
-                <hr class="work-line-break">
-            </p>
-            <p class="point">Audited purchase order confirmations and delivery manifests to catch and correct errors
-                with our
-                suppliers through verifying all orders before they are processed in our system by using original
-                purchase orders to backup claims as required.</p>
-        </div>
-        <hr class="line-break">
-        <div id="resume" class="work-experience-job-title">
-            <h3 class="work-left-align work-company">Penguin Pickup</h3>
-            <h5 class="work-right-align work-location">Toronto,ON</h5>
-        </div>
-        <div class="work-experience-job-title">
-            <h4 class="work-left-align work-position">Customer Service Associate</h4>
-            <h5 class="work-right-align work-dates">Aug 2017 - Oct 2019</h5>
-        </div>
-
-        <div class="work-experience-points">
-            <p class="point">Overhauled Excel spreadsheets within the company to assist with inventory management and
-                customer
-                delivery scheduling that increased employee efficiency by automating repetitive tasks.
-                <hr class="work-line-break">
-            </p>
-            <p class="point">Trained remote teams in British Columbia by creating process and procedure documentation
-                that helped
-                assist in the growth and expansion of the company nationally.
-                <hr class="work-line-break">
-            </p>
-            <p class="point">Earned the Employee of the Month Award for April 2019.</p>
-        </div>
-
-    </div>
+    
     <footer>
-        © 2022 Robert Taylor
+        © 2023 Robert Taylor
     </footer>
 </body>
-
 </html>
